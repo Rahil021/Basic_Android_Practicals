@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_your_books"
+            android:icon="@drawable/menu_your_books"
+            android:title="Your Books" />
+        <item
+            android:id="@+id/Settings"
+            android:icon="@drawable/menu_settings"
+            android:title="Settings" />
+
+        <item android:title="Communicate">
+            <menu>
+                <item android:id="@+id/ic_share"
+                    android:title="Share" />
+                <item android:id="@+id/ic_send"
+                    android:title="Feedback" />
+                <item android:id="@+id/ic_receive"
+                    android:title="Exit" />
+            </menu>
+        </item>
+
+    </group>
+</menu>

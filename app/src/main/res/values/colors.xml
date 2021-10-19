@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#000C5A</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#28D063</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="Red">#E8343D</color>
+    <color name="Blue">#000C5A</color>
+    <color name="White">#FFFFFF</color>
+
+
+    <color name="string1">#850000</color>
+    <color name="string2">#0C1657</color>
+    <color name="selected">#039BE5</color>
+    <color name="btn_clr">#FF251F</color>
+    <color name="green">#37FF52</color>
+    <color name="operator_btn_clr">#3949AB</color>
+
+    <!--Colors for Practical 10-->
+
+    <color name="peach_orange">#FD8369</color>
+    <color name="tree_green">#28D063</color>
+    <color name="lgrey">#34334B</color>
+    <color name="blue_black">#F3F5F9</color>
+    <color name="lblue">#039BE5</color>
+    <color name="lorange">#FF0073</color>
+
+    <color name="gdark">#74F6A3</color>
+    <color name="glight">#C4FBD8</color>
+
+    <color name="lyellow">#FFE65D</color>
+
+    <color name="orange">#FF7900</color>
+
+
+    <!--
+     //For light Theme
+     <color name="blue_black1">#34334B</color>
+     <color name="lgrey">#F3F5F9</color>-->
+
+</resources>

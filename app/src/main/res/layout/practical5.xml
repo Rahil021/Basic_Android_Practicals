@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A2543"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:background="#1A2543"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/display2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1A2543"
+            android:textColor="@color/White"
+            android:layout_weight="1"
+            android:gravity="bottom|right"
+            android:paddingRight="10dp"
+            android:fontFamily="@font/cairo_bold"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1A2543"
+            android:maxLength="13"
+            android:layout_weight="2"
+            android:gravity="bottom|right"
+            android:paddingRight="10dp"
+            android:fontFamily="@font/cairo_bold"
+            android:textColor="@color/White"
+            android:textSize="45dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bDot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/button"
+            android:text="."
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BRemain"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/button"
+            android:text="%"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:elevation="5dp">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:text="1"
+            android:fontFamily="@font/cairo_bold"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:text="2"
+            android:fontFamily="@font/cairo_bold"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="3"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bdiv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/operator_buttons"
+            android:fontFamily="@font/cairo_bold"
+            android:text="÷"
+            android:textColor="#ecf0f1"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="4"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="5"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="6"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bmul"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/operator_buttons"
+            android:fontFamily="@font/cairo_bold"
+            android:text="x"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="7"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="8"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="9"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bsub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/operator_buttons"
+            android:fontFamily="@font/cairo_bold"
+            android:text="-"
+            android:textColor="#ecf0f1"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="C"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/sign_up_submit"
+            android:fontFamily="@font/cairo_bold"
+            android:text="0"
+            android:textColor="#ecf0f1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttoneql"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/operator_buttons"
+            android:fontFamily="@font/cairo_bold"
+            android:text="="
+            android:textColor="#ecf0f1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/badd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/operator_buttons"
+            android:onClick="onClick"
+            android:fontFamily="@font/cairo_bold"
+            android:text="+"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Practical5">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.70" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->

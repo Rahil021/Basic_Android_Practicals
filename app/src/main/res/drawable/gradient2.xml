@@ -1,0 +1,19 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <gradient
+        android:startColor="@color/lgrey"
+        android:centerColor="@color/lgrey"
+        android:endColor="@color/lblue"
+        android:centerX="0.67"
+        android:type="linear"
+        android:angle="90"/>
+    <corners
+        android:radius="0dp"/>
+
+</shape>
+
+<!--
+
+android:endColor="#C4FBD8"  //light
+android:endColor="#74F6A3"  //dark  - if needed (currently in use ... in dark theme)
+
+-->

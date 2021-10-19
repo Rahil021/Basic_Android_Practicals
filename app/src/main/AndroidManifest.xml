@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.madpracticals">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mad_logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MADPracticals">
+        <activity android:name=".Practical10.Prac_1"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Practical12.Practical12" />
+        <activity android:name=".Practical11.Practical11" />
+        <activity android:name=".Practical10.ViewAll" />
+        <activity android:name=".Practical10.book_return" />
+        <activity android:name=".Practical10.your_books" />
+        <activity android:name=".Practical10.book_descrciption" />
+        <activity android:name=".Practical10.Practical10_Home" />
+        <activity android:name=".Practical10.Deep.Practical10_ex4_return_book_2" />
+        <activity android:name=".Practical10.Deep.Practical10_ex3_return_book1" />
+        <activity android:name=".Practical10.Deep.Practical10_ex2_book_details" />
+        <activity android:name=".Practical10.Deep.Practical10_ex1_get_book" />
+        <activity android:name=".Practical10.Deep.Practical10" />
+        <activity android:name=".Practical9" />
+        <activity android:name=".Practical8" />
+        <activity android:name=".Practical7" />
+        <activity android:name=".List_view_for_swapping_pracs">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".Practical5" />
+        <activity android:name=".No_Internet" />
+        <activity android:name=".Practical3" />
+        <activity android:name=".Practical2" />
+        <activity android:name=".Practical1" />
+        <activity android:name=".Practical4" />
+    </application>
+
+</manifest>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Practical10.book_descrciption">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/arrow_back"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/more_btn"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/more"
+        app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/book_details_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:fontFamily="@font/frankruhllibre_medium"
+        android:gravity="center"
+        android:text="Book Details"
+        android:textColor="@color/lgrey"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+        app:layout_constraintEnd_toStartOf="@+id/more_btn"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
+        app:layout_constraintTop_toTopOf="@+id/back_btn" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fadingEdgeLength="100dp"
+        android:overScrollMode="never"
+        android:paddingBottom="10dp"
+        android:requiresFadingEdge="vertical"
+        android:scrollIndicators="none"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_details_tv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:elevation="150dp"
+                android:padding="10dp"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--
+
+        android:layout_width="200dp"
+            android:layout_height="250dp"
+
+        -->
+
+                <ImageView
+                    android:id="@+id/book_cover"
+                    android:layout_width="300dp"
+                    android:layout_height="350dp"
+                    android:layout_margin="0dp"
+                    android:outlineAmbientShadowColor="@color/blue_black"
+                    android:outlineSpotShadowColor="@color/blue_black"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cover_hamlet"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/book_details_tv">
+
+                </ImageView>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#0000"
+                android:elevation="20dp"
+                android:fontFamily="@font/crimsontext_bold"
+                android:gravity="left"
+                android:text="Hamlet"
+                android:textColor="@color/blue_black"
+                android:textSize="26dp"
+                app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="@+id/materialCardView"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+            <TextView
+                android:id="@+id/author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:elevation="20dp"
+                android:fontFamily="@font/crimsontext_regular"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="William Shakespeare"
+                android:textColor="@color/blue_black"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/book_name"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="@+id/book_name"
+                app:layout_constraintTop_toBottomOf="@+id/book_name" />
+
+            <TextView
+                android:id="@+id/Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#0000"
+                android:elevation="20dp"
+                android:fontFamily="@font/crimsontext_semi_bold"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="Description:"
+                android:textColor="@color/tree_green"
+                android:textSize="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/author_name" />
+
+
+                <TextView
+                android:id="@+id/book_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="20dp"
+                android:fontFamily="@font/frankruhllibre_medium"
+                android:justificationMode="inter_word"
+                android:text="@string/Hamlet_desc"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Desc" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:clickable="false"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="@color/lyellow"
+        android:rating="4.7"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/rent_btn"
+        app:layout_constraintStart_toEndOf="@+id/rating_text">
+
+    </RatingBar>
+
+    <TextView
+        android:id="@+id/rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:elevation="20dp"
+        android:fontFamily="@font/cairo_bold"
+        android:gravity="left"
+        android:text="Rating  4.7"
+        android:textColor="@color/blue_black"
+        android:textSize="26dp"
+        android:visibility="gone"
+        android:paddingRight="15dp"
+        android:layout_marginLeft="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar" />
+
+    <Button
+        android:id="@+id/rent_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/p10_btn_background"
+        android:fontFamily="@font/cairo_bold"
+        android:text="RENT |   ₹5.00 / D"
+        android:paddingTop="0dp"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textAllCaps="false"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

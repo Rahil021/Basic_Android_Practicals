@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="25dp"
+    android:background="#05091E"
+    app:cardUseCompatPadding="true"
+    android:elevation="15dp"
+    android:padding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#060A23">
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/cairo_bold"
+            android:text="Hamlet"
+            android:textColor="@color/tree_green"
+            android:textSize="22dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@+id/cart_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/cairo_regular"
+            android:text="170₹"
+            android:textSize="13dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/book_name" />
+
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/cairo_bold"
+            android:text="by William Shakespeare"
+            android:textColor="@color/blue_black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/cart_img"
+            app:layout_constraintTop_toBottomOf="@+id/book_name"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/cart_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/cairo_bold"
+            android:text="Rented Date : "
+            android:textColor="@color/lyellow"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/cart_img"
+            app:layout_constraintTop_toBottomOf="@+id/author_name"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/reg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="24-03-21"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/blue_black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_item_quantity"
+            app:layout_constraintStart_toEndOf="@+id/cart_item_quantity"
+            app:layout_constraintTop_toTopOf="@+id/cart_item_quantity" />
+
+        <EditText
+            android:id="@+id/quantity_no_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="1"
+            android:inputType="number"
+            android:maxLength="2"
+            android:visibility="gone"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/blue_black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_item_quantity"
+            app:layout_constraintStart_toEndOf="@+id/cart_item_quantity"
+            app:layout_constraintTop_toTopOf="@+id/cart_item_quantity" />
+
+        <TextView
+            android:id="@+id/cart_item_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/cairo_bold"
+            android:layout_marginBottom="20dp"
+            android:text="Status : "
+            android:textColor="@color/lyellow"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cart_img"
+            app:layout_constraintTop_toBottomOf="@+id/cart_item_quantity"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/book_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:text="Active"
+            android:textColor="@color/blue_black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_item_total"
+            app:layout_constraintStart_toEndOf="@+id/cart_item_total"
+            app:layout_constraintTop_toTopOf="@+id/cart_item_total"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cart_img"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:elevation="15dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/your_books_cover"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.533"
+                app:srcCompat="@drawable/cover_hamlet" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
