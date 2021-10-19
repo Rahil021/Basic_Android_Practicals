@@ -81,7 +81,7 @@ public class Practical9 extends AppCompatActivity {
 
                     Double i = Double.valueOf(amount.getText().toString());
 
-                    Double ans = i * 72.44;
+                    Double ans = i * 75.05;
                     DecimalFormat df = new DecimalFormat("#.##");
 
 
